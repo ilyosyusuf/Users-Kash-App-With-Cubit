@@ -40,6 +40,7 @@ dependencies:
   hive_flutter: ^1.1.0
   path_provider: ^2.0.11
   shimmer: ^2.0.0
+  connectivity_plus: ^2.3.6
 
 dev_dependencies:
   flutter_test:
