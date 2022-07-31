@@ -17,9 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MultiRepositoryProvider(providers: [
-          RepositoryProvider(create: (context) => UserRepository())
-        ], child: HomeView()),
+      home: MultiRepositoryProvider(
+        providers: [RepositoryProvider(create: (context) => UserRepository())],
+        child: HomeView(),
+      ),
     );
   }
 }
