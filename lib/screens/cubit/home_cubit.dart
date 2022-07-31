@@ -12,8 +12,6 @@ class HomeCubit extends Cubit<HomeState>{
     loadData();
   }
 
-
-
   Future loadData() async {
         try {
       emit(HomeLoadingState());
@@ -29,7 +27,7 @@ class HomeCubit extends Cubit<HomeState>{
         try {
       emit(HomeLoadingState());
       final users = await userRepository.getUsers();
-      print("initial");
+      print("refresh");
       emit(HomeLoadedState(users!));
     } catch (e) {
       emit(HomeErrorState(message: "Error at refreshing user data"));

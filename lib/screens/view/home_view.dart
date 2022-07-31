@@ -10,6 +10,7 @@ import 'package:users_cubit/repositories/user_repository.dart';
 import 'package:users_cubit/screens/cubit/home_cubit.dart';
 import 'package:users_cubit/screens/state/home_state.dart';
 import 'package:users_cubit/services/hive_service.dart';
+import 'package:users_cubit/widgets/shimmer_listtile_widget.dart';
 import 'package:users_cubit/widgets/users_listtile_widget.dart';
 
 class HomeView extends StatelessWidget {
@@ -45,7 +46,7 @@ class HomeView extends StatelessWidget {
                   return ListView.builder(
                     itemCount: 15,
                     itemBuilder: (context, i) {
-                      return Container();
+                      return ShimmerListTileWidget();
                     },
                   );
                 }
